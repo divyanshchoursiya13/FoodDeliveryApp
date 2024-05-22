@@ -3,6 +3,8 @@ import { StyleSheet,Text,View,ScrollView } from 'react-native'
 import {FontAwesome5} from '@expo/vector-icons'
 import {MaterialCommunityIcons} from '@expo/vector-icons'
 import { FontAwesome6 } from '@expo/vector-icons';
+import {MaterialIcons} from '@expo/vector-icons'
+
 const Categories = () => {
   return (
     <>
@@ -11,28 +13,23 @@ const Categories = () => {
 
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           <View style={styles.box}>
-          <FontAwesome6 name="burger" size={24} color="black" style={styles.icons} />
-          <Text style={styles.text}>Burger</Text>
+          <MaterialCommunityIcons name="food-apple-outline" size={24} color="black" style={styles.icons} />
+          <Text style={styles.text}>Starters</Text>
+          </View>
+          {/* style={styles.icons} */}
+          <View style={styles.box}>
+          <MaterialIcons name="dinner-dining" size={24} color="black" style={styles.icons} />
+          <Text style={styles.text}>Dinners</Text>
           </View>
 
           <View style={styles.box}>
-          <FontAwesome6 name="pizza-slice" size={24} color="black" style={styles.icons} />
-          <Text style={styles.text}>Burger</Text>
+          <MaterialCommunityIcons name="noodles" size={24} color="black" style={styles.icons} />
+          <Text style={styles.text}>Breakfast</Text>
           </View>
 
           <View style={styles.box}>
           <MaterialCommunityIcons name="cupcake" size={24} color="black" style={styles.icons} />
-          <Text style={styles.text}>Cakes</Text>
-          </View>
-
-          <View style={styles.box}>
-          <FontAwesome6 name="burger" size={24} color="black" style={styles.icons} />
-          <Text style={styles.text}>Burger</Text>
-          </View>
-
-          <View style={styles.box}>
-          <FontAwesome6 name="burger" size={24} color="black" style={styles.icons} />
-          <Text style={styles.text}>Burger</Text>
+          <Text style={styles.text}>Deserts</Text>
           </View>
 
         </ScrollView>
@@ -52,7 +49,7 @@ const styles=StyleSheet.create({
     borderRadius: 10,
     backgroundColor: "#ffff",
     // alignItems: 'center',
-    width: '95%',
+    width: '97%',
     margin: 5,
   },
 

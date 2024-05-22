@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet, Dimensions, Button } from 'react-native';
-import { useFonts } from 'expo-font';
 
 const AllRestaurents = () => {
 
@@ -8,9 +7,7 @@ const AllRestaurents = () => {
         <>
         <View style={styles.headerview}>
 						<Text style={styles.subtitle1}>--- All Restaurents ---</Text>
-					</View>
-
-                   
+					</View> 
         </>
 	);
 };
@@ -28,7 +25,7 @@ const styles = StyleSheet.create({
     },
     
     headerview: {
-        elevation: 10,
+    elevation: 10,
     borderRadius: 10,
     marginTop: 10,
     backgroundColor: "#ffff",
